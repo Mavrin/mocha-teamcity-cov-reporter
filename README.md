@@ -13,20 +13,3 @@ Basically, have your project's package.json be like:
 Then call mocha with:
 
 `mocha --reporter mocha-teamcity-cov-reporter test`
-
-This also works well with [grunt-mocha-test](https://github.com/pghalliday/grunt-mocha-test)
-
-``` js
-mochaTest: {  
-  test: {  
-    // Your test settings  
-  },  
-  coverage: {  
-    options: {  
-      reporter: 'mocha-teamcity-cov-reporter',  
-      quiet: false  
-    },  
-    src: ['src/files.js']  // Your source code files  
-  }  
-}
-```
